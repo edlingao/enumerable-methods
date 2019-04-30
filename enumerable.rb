@@ -137,11 +137,8 @@ super_hash = {
     idk3: 3,
     idk4: 4
 }
-=begin
+
     
-rescue => exception
-    
-end
 super_array.my_each{|value| 
     puts value if value % 2 == 0
 }
@@ -162,10 +159,15 @@ puts super_array.my_none?{|value| value >= 1}
 
 puts super_array.count(0)
 puts super_array.my_count(0)
-=end
+
 
 puts super_array.inject{|value| value}
+
+
+
 puts super_array.my_inject{|value| value}
+
+
 
 
 
