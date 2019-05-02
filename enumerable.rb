@@ -127,20 +127,3 @@ module Enumerable
     end
 
 end
-
-
-
-super_array = [1,5,3,56,7,56,4]
-empty_array = ["Hol", "MundoASdasd", "MundoASdasd", "MundoASdasd", "MundoASdasd", "MundoASdasd"]
-super_hash = {
-    idk: 1,
-    idk2: 2,
-    idk3: 3,
-    idk4: 4
-}
-
-puts super_array.my_each{|i| i}
-
-
-
-
