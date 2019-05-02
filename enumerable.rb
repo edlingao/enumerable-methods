@@ -11,7 +11,7 @@ module Enumerable
             break unless condition
 
         end
-
+        self
 
     end
     def my_each_with_i
@@ -25,6 +25,7 @@ module Enumerable
             break unless condition
 
         end
+        self
     end
     def my_select
 
@@ -138,7 +139,7 @@ super_hash = {
     idk4: 4
 }
 
-super_array.my_each{|i| i}
+puts super_array.my_each{|i| i}
 
 
 
