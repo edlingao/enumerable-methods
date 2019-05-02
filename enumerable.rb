@@ -138,34 +138,10 @@ super_hash = {
     idk4: 4
 }
 
-    
-super_array.my_each{|value| 
-    puts value if value % 2 == 0
-}
-super_hash.my_each{|value, key|
-    
-}
-super_array.my_each_with_i {|value, i|
-    puts "#{value} is on idex #{i}"
-}
+array =[1,2,3,4,6]
 
-super_hash.my_select{|value, key|
-    puts "#{value} #{key}"
-}
+array.my_each { |i| i }
 
-puts super_array.my_any?{|value| value < 1}
-puts super_array.my_all?{|value| value >= 1}
-puts super_array.my_none?{|value| value >= 1}
-
-puts super_array.count(0)
-puts super_array.my_count(0)
-
-
-puts super_array.inject{|value| value}
-
-
-
-puts super_array.my_inject{|value| value}
 
 
 
