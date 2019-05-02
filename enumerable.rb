@@ -138,13 +138,7 @@ super_hash = {
     idk4: 4
 }
 
-array =[1,2,3,4,6]
-
-array.my_each { |i| i }
-
-
-
-
+super_array.my_each{|i| i}
 
 
 
