@@ -11,7 +11,7 @@ module Enumerable
             break unless condition
 
         end
-
+        self
 
     end
     def my_each_with_i
@@ -25,6 +25,7 @@ module Enumerable
             break unless condition
 
         end
+        self
     end
     def my_select
 
@@ -126,48 +127,3 @@ module Enumerable
     end
 
 end
-
-
-
-super_array = [1,5,3,56,7,56,4]
-empty_array = ["Hol", "MundoASdasd", "MundoASdasd", "MundoASdasd", "MundoASdasd", "MundoASdasd"]
-super_hash = {
-    idk: 1,
-    idk2: 2,
-    idk3: 3,
-    idk4: 4
-}
-=begin
-    
-rescue => exception
-    
-end
-super_array.my_each{|value| 
-    puts value if value % 2 == 0
-}
-super_hash.my_each{|value, key|
-    
-}
-super_array.my_each_with_i {|value, i|
-    puts "#{value} is on idex #{i}"
-}
-
-super_hash.my_select{|value, key|
-    puts "#{value} #{key}"
-}
-
-puts super_array.my_any?{|value| value < 1}
-puts super_array.my_all?{|value| value >= 1}
-puts super_array.my_none?{|value| value >= 1}
-
-puts super_array.count(0)
-puts super_array.my_count(0)
-=end
-
-puts super_array.inject{|value| value}
-puts super_array.my_inject{|value| value}
-
-
-
-
-
